@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smart Chicken Farm</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/livestock.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="website">
+        <header class="header">
+            <div class="grid">
+                <div class="header__name">
+                    <ul class="header__name-list">
+                        <li class="list-item list-img">
+                            <a href="index.html" class="home__logo"><img src="./image/logo.png" alt="" class="logo-img"></a>
+                            </li>
+                        <li class="list-item list-name">
+                            <span class="header__title">Smart Chicken Farm</span>
+                        </li>
+                    </ul>
+                    <ul class="header__change-chuong header__name-list">
+                        <li class="list-link"><a href="chuong1.html" class="header__link-chuong1 side__link list-item">Coop 1</a></li>
+                        <li class="list-link"><a href="chuong2.html" class="header__link-chuong1 side__link list-item" >Coop 2</a></li>
+                    </ul>
+                    <ul class="list-time">
+                        <li id="time"></li>
+                        <li id="date"></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="container__function">
+                <div class="image">
+                    <div class="nhietdo">
+                        <h1 class="h__img"><img src="./image/nhietdo1.png" alt="Nhiệt độ" class="nd__img"></h1>
+                        <h3 id="nd__content"></h3>
+                        <h2 class="nd__text">Temperature(ºC)</h2>
+                    </div>
+                    <div class="doam">
+                        <h1 class="h__img"><img src="./image/doam1.png" alt="Độ ẩm" class="da__img"></h1>
+                        <h3 id="da__content"></h3>
+                        <h2 class="da__text">Humidity(%)</h2>
+                    </div>
+                    <div class="khoi">
+                        <h1 class="h__img"><img src="./image/carbon-neutral.png" alt="Khói" class="khoi__img"></h1>
+                        <h3 id="khoi__content"></h3>
+                        <h2 class="khoi__text">CO2(ppm)</h2>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <div class="control__feed">
+                        <img src="./image/feed.jpg" alt="" class="control__feed__img">
+                        <button class="btn" , id="control__feed__on">Feed</button>
+                    </div>
+                    <div class="control__light">
+                        <img src="./image/turned-off.png" alt="" class="control__light__img" , id="Light">
+                        <div class="control__light__btn">
+                            <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+                            <p><strong>Light_mode: <span class="text" id = "demo"></span></strong></p>
+                        </div>
+                    </div>
+                    <div class="control__air">
+                        <img src="./image/fan_off.png" alt="" class="control__air__img" id="Smoke">
+                        <div class="control__air__btn">
+                            <button class="btn" , id="control__air__on">On</button>
+                            <button class="btn" , id="control__air__off">Off</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container__change-side">
+                <div class="container__chuongName">
+                    <span id="chuongName">Home</span>
+                </div>
+                
+               
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer class="footer__content">
+                <h1 class="footer__conclusion">Designed by Nguyen and Thuan</h1>
+                <div class="footer__find-link">
+                    <ul class="footer__link">
+                        <li class="footer__title">Contact us: </li>
+                        <li class="footer__title">
+                            Nguyễn Kiến Nguyên: 21139081@student.hcmute.edu.vn
+                            <a href="https://www.facebook.com/profile.php?id=100014076796852" target="_blank" class="header__nav-icon-link">
+                                <i class="header__nav-icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer__title">
+                            Phan Thành Thuận: 21139056@student.hcmute.edu.vn
+                            <a href="https://www.facebook.com/phanthuan08" target="blank" class="header__nav-icon-link">
+                                <i class="header__nav-icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__logo">
+                        <img src="./image/ute.png" alt="" class="logo__hcmute">
+                        <img src="./image/feeetranss.png" alt="" class="logo__feee">
+                    </ul>
+                </div>
+
+
+            </footer>
+        </div>
+
+    </div>
+    <script>
+        function dongho() {
+            var time = new Date();
+            var gio = time.getHours();
+            var phut = time.getMinutes();
+            var giay = time.getSeconds();
+            if (gio < 10)
+                gio = "0" + gio;
+            if (phut < 10)
+                phut = "0" + phut;
+            if (giay < 10)
+                giay = "0" + giay;
+            document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
+            setTimeout("dongho()", 1000);
+        };
+        dongho();
+    </script>
+    <script>
+        var curDate = new Date();
+
+        // Ngày hiện tại
+        var curDay = curDate.getDate();
+
+        // Tháng hiện tại
+        var curMonth = curDate.getMonth() + 1;
+
+        // Năm hiện tại
+        var curYear = curDate.getFullYear();
+
+        // Gán vào thẻ HTML
+        document.getElementById('date').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+    </script>
+
+    
+
+</body>
+
+</html>
