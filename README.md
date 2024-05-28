@@ -11,10 +11,5 @@ Here is my team's smart farm control interface:
 
 ## How to use my code
 * You can use CSS, HTML, and JavaScript to create an interface for user interaction.
-* Use Google Firebase to get data.
+* Use Google Firebase to get and update data.
 * Link to website: [https://phanthuan091.github.io/Final-Project-IoT-Architecture-and-Protocols/index_log.html](https://phanthuan091.github.io/Final-Project-IoT-Architecture-and-Protocols/index_log.html)
-
-To embed a YouTube video into your HTML, use the following code snippet:
-
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pE-bOydPdzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
