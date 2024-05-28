@@ -7,9 +7,14 @@ Here is my team's smart farm control interface:
 </p>
 
 ### Video demo
-<iframe width="768" height="432" src="https://www.youtube.com/embed/pE-bOydPdzc" title="Hệ thống Smart Chicken Farm | Báo cáo Cuối kỳ Thực tập Kiến trúc và Giao thức IoT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch the video demo on YouTube](https://www.youtube.com/watch?v=pE-bOydPdzc)
 
 ## How to use my code
 * You can use CSS, HTML, and JavaScript to create an interface for user interaction.
 * Use Google Firebase to get data.
 * Link to website: [https://phanthuan091.github.io/Final-Project-IoT-Architecture-and-Protocols/index_log.html](https://phanthuan091.github.io/Final-Project-IoT-Architecture-and-Protocols/index_log.html)
+
+To embed a YouTube video into your HTML, use the following code snippet:
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pE-bOydPdzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
