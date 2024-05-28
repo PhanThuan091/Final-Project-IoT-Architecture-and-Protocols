@@ -7,7 +7,7 @@ Here is my team's smart farm control interface:
 </p>
 
 ### Video demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pE-bOydPdzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/pE-bOydPdzc" title="Hệ thống Smart Chicken Farm | Báo cáo Cuối kỳ Thực tập Kiến trúc và Giao thức IoT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## How to use my code
 * You can use CSS, HTML, and JavaScript to create an interface for user interaction.
